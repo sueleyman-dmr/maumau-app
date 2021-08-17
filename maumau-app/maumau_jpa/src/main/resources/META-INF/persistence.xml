@@ -1,0 +1,11 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+    <persistence-unit name="mauPU" transaction-type="RESOURCE_LOCAL">
+        <provider>com.objectdb.jpa.Provider</provider>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="$objectdb/db/maumau.odb;drop"/>
+            <property name="javax.persistence.jdbc.user" value="admin"/>
+            <property name="javax.persistence.jdbc.password" value="admin"/>
+            <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
+        </properties>
+    </persistence-unit>
+</persistence>
